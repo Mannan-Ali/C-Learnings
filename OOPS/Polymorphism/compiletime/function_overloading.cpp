@@ -18,10 +18,10 @@ public:
         cout << Base1
              << endl;
     }
-    void display(int x, int y)
+    void display(int x,int y)
     {
         cout << "2 argument function : ";
-        Base1 = x + y;
+        Base1 = x +5;
         cout << Base1
              << endl;
     }
@@ -32,7 +32,7 @@ int main()
     FunO obj1;
     obj1.display();
     obj1.display(23);
-    obj1.display(22, 44);
+
 
     return 0;
 }

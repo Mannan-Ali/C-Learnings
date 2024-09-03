@@ -42,7 +42,7 @@ string prefix(string st)
         }
         else
         {
-            while (!pf.empty() && pre(pf.top()) > pre(st[i]))
+            while (!pf.empty() && pre(pf.top()) >= pre(st[i]))
             {
                 result += pf.top();
                 pf.pop();
@@ -60,6 +60,6 @@ string prefix(string st)
 }
 int main()
 {
-    string infix = "(a-b/c)*(a/k-1)";
+    string infix = "(a-b/c+d)*(a/k-b-m)";
     cout << prefix(infix);
 }

@@ -1,28 +1,37 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-class student{
+class student
+{
     int x;
 
-    public:
-    void print(){
-        cout<<x<<endl;
+public:
+    void print()
+    {
+        cout << x << endl;
     }
-    student(){
-        x=0;
+    student()
+    {
+        x = 0;
     }
-    student(int y){
-        x=y;
+    student(int y)
+    {
+        x = y;
     }
-    ~student(){
-        cout<<"Deteled";
+    ~student()
+    {
+        cout << "Deteled"<<endl;
     }
 };
 
-int main(){
-    student mannan(2),jaimin;
+int main()
+{
+    student mannan(2);
     mannan.print();
-    jaimin.print();
-
+    {
+        student jaimin;
+        jaimin.print();
+    }
+    cout<<"Main functiuon"<<endl;
     return 0;
 }

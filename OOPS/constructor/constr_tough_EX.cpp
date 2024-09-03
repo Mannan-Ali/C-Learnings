@@ -9,11 +9,12 @@ class Bankdetails
     float returnvalue;
 
 public:
-    
     void printinfo(void);
-    float converter(float r){
-        if(r>=1){
-            r=r/100;
+    float converter(float r)
+    {
+        if (r >= 1)
+        {
+            r = r / 100;
         }
         return r;
     }
@@ -29,17 +30,17 @@ public:
             returnvalue *= (1 + interest_rate);
         }
     }
-//     Bankdetails(int p, int y, int r)
-//     { // If rate is given in percentage
-//         principal = p;
-//         years = y;
-//         interest_rate = float(r) / 100;
-//         returnvalue = principal;
-//         for (int i = 0; i < y; i++)
-//         {
-//             returnvalue *= (1 + interest_rate);
-//         }
-//     }
+    Bankdetails(int p, int y, int r)
+    { // If rate is given in percentage
+        principal = p;
+        years = y;
+        interest_rate = float(r) / 100;
+        returnvalue = principal;
+        for (int i = 0; i < y; i++)
+        {
+            returnvalue *= (1 + interest_rate);
+        }
+    }
 };
 
 void Bankdetails::printinfo(void)
@@ -53,8 +54,12 @@ int main()
 {
     int p, y;
     float r;
-    cin >> p >> y >> r;
-    Bankdetails bd1(p,y,r);
+    int R;
+    cin >> p >> y >> r >> R;
+    Bankdetails bd1(p, y, r);
     bd1.printinfo();
+
+    Bankdetails bd2(p, y, R);
+    bd2.printinfo();
     return 0;
 }

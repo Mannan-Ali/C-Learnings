@@ -16,9 +16,12 @@ int main()
     }
     cout << endl;
     for (int i = 0; i < size - 1; i++)
+
     {
+        int current=i;
         for (int j = i + 1; j < size; j++)
         {
+            current=j;
             if (arry[j] < arry[i])
             {
                 int temp = arry[j];

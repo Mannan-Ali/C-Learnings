@@ -6,12 +6,14 @@ class student
     int roll_no;
     float fees;
     string middle_name;
-    void print()
+
+   
+public:
+ void print()
     {
         cout << roll_no << endl;
     }
 
-public:
     student()
     {
         roll_no = 0;
@@ -26,13 +28,7 @@ public:
         middle_name = n;
         print();
     }
-    student(student &x)
-    {
-        roll_no = x.roll_no;
-        fees = x.fees;
-        middle_name = x.middle_name;
-        print();
-    }
+   
 };
 
 int main()
@@ -41,6 +37,7 @@ int main()
 
     student sumit(22, 3000, "bajpaye");
     student rahul(mannan);
+    rahul.print();
 
     return 0;
 }

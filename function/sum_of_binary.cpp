@@ -1,6 +1,5 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
-
 
 // int binarysum(int a,int b){
 //     int ans=0;
@@ -9,7 +8,7 @@ using namespace std;
 //         if(a%2==0 && b%2==0){
 //             ans=ans*10+prev;
 //             prev=0;
-//         }else if(a%2==0 && b%2==1 || a%2==1 && b%2==0){
+//         }else if((a%2==0 && b%2==1) || (a%2==1 && b%2==0)){
 //             if(prev==1){
 //                 ans=ans*10+0;
 //                 prev=1;
@@ -56,7 +55,7 @@ using namespace std;
 //     }
 //     if(prev==1){
 //         ans=ans*10+1;
-//     }     
+//     }
 //     return ans;
 // }
 
@@ -64,21 +63,24 @@ using namespace std;
 //     int a,b;
 //     cin>>a>>b;
 //     cout<<binarysum(a,b);
-    
+
 //     return 0;
 // }
 
-
-string addBinary(string a, string b) {
+string addBinary(string a, string b)
+{
     string result = "";
     int i = a.size() - 1, j = b.size() - 1;
     int carry = 0;
-    while (i >= 0 || j >= 0) {
+    while (i >= 0 || j >= 0)
+    {
         int sum = carry;
-        if (i >= 0){
-            sum += a[i]-'0';
+        if (i >= 0)
+        {
+            sum += a[i] - '0';
         }
-        if (j >= 0){
+        if (j >= 0)
+        {
             sum += b[j] - '0';
         }
         result = to_string(sum % 2) + result;
@@ -86,14 +88,22 @@ string addBinary(string a, string b) {
         i--;
         j--;
     }
-    if (carry != 0) result = '1' + result;
+    if (carry != 0)
+        result = '1' + result;
     return result;
 }
 
-int main() {
+int main()
+{
     string a, b;
     cin >> a >> b;
     string sum = addBinary(a, b);
     cout << sum << endl;
+
+    // string x="1";
+    // int y=x[0]-'0';
+    // cout<<y<<endl;
+    // cout<<typeid(y).name();
+
     return 0;
 }

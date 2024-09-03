@@ -8,35 +8,30 @@ class product
     float price;
 
 public:
-    void setdata(int n);
-    void display(int n);
+    void setdata();
+    void display();
 };
-void product::setdata(int n)
+void product::setdata()
 {
-    for (int i = 0; i < n; i++)
-    {
-        cin >> ID;
-        cin >> name;
-        cin >> price;
-    }
+
+    cin >> ID;
+    cin >> name;
+    cin >> price;
 }
-void product::display(int n)
+void product::display()
 {
-    setdata(n);
-    for (int i = 0; i < n; i++)
-    {
-        cout << ID << endl;
-        cout << name << endl;
-        cout << price << endl;
-    }
+    setdata();
+
+    cout << ID << endl;
+    cout << name << endl;
+    cout << price << endl;
 }
 
 int main()
 {
-    int n;
-    cin >> n;
+  
     product nykaa;
-    nykaa.display(n);
+    nykaa.display();
 
     return 0;
 }

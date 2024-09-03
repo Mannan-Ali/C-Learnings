@@ -6,9 +6,9 @@ int decimaltobinary(int n){
     int x=1;
     int ans=0;
     while(x<=n){
-        x*=8;
+        x*=2;
     }
-    x/=8;
+    x/=2;
     while(x>0){
         int lastdigit=n/x;
         n-=lastdigit*x;

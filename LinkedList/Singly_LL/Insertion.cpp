@@ -93,13 +93,13 @@ int main(){
     Node * head = NULL;
     Node * tail = NULL;
 
-    insertatposition(tail,head,6,10);
+    insertatposition(tail,head,6,14);
     print(head);
-    insertatposition(tail,head,2,10);
+    insertatposition(tail,head,2,50);
     print(head);
-    insertatposition(tail,head,3,10);
+    insertatposition(tail,head,3,12);
     print(head);
-    insertatposition(tail,head,4,10);
+    insertatposition(tail,head,4,13);
     print(head);
 
     delete head;

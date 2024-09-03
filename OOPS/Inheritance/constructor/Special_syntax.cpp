@@ -39,7 +39,7 @@ class Derived : public Base1, public Base2
     int d3, d4;
 
 public:
-    Derived(int a1, int a2, int a3, int a4) :  d3(a2), d4(a4),Base2(a1), Base1(a3)
+    Derived(int a1, int a2, int a3, int a4) :  d3(a2), d4(a4),Base2(1), Base1(a3)
     {
         cout << "class Derived is called" << endl;
         cout<<d3<<endl

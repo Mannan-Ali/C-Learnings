@@ -55,7 +55,9 @@ int binary_search(int a, int arrya[], int num)
 int main()
 {
     int n;
+    cout << "Enter Size of array : ";
     cin >> n;
+    cout << "Enter Elements : ";
     int values[n];
     for (int i = 0; i < n; i++)
     {

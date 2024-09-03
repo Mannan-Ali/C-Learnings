@@ -12,10 +12,10 @@ class calculator{
 class functions
 {
     int a, b;
-    friend int calculator :: friendssum(functions o1, functions o2);
+    friend int calculator :: friendssum(functions o1, functions o2){
         // functions o3;
         // o3.setdata((o1.a + o2.a), (o1.b + o2.b)); 
-
+    }
 
 public:
 

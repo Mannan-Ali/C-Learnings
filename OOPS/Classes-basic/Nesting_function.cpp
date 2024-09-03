@@ -6,7 +6,7 @@ class Binary{
     string s;
     public:
     void givedata(void){
-        cout<<"enter a binary number : "<<endl;
+        cout<<"Enter a binary number : ";
         cin>>s;
     }
     int chk_binary(void);
@@ -20,7 +20,7 @@ int Binary :: chk_binary(void){
             cout<<"The number is not binary"<<endl;
             return -1;
         }
-    }cout<<"No is binary"<<endl;
+    }cout<<"Number is binary"<<endl;
 }
 int main(){
     Binary num1;

@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 // int main(){
@@ -34,48 +34,55 @@ using namespace std;
 //     return 0;
 // }
 
+int main()
+{
+    int size;
+    cin >> size;
+    cin.ignore();
+    char arr[size + 1];
+    cin.getline(arr, size);
+    cin.ignore();
+    int i = 0;
+    int currlength = 0, maxlength = 0;
+    int st = 0, maxst = 0;
+    while (1)
+    {
+        if (arr[i] == ' ' || arr[i] == '\0')
+        {
+            if (currlength > maxlength)
+            {
+                maxlength = currlength;
+                maxst = st;
+            }
+            st = i + 1;
+            currlength = 0;
+        }
+        else
+        {
+            currlength++;
+        }
+        if (arr[i] == '\0')
+        {
+            break;
+        }
+        i++;
+    }
+    for (int i = 0; i < maxlength; i++)
+    {
+        cout << arr[i + maxst];
+    }
+    cout << endl;
+    cout << maxlength;
+    return 0;
+}
 
-// int main(){
-//     int size;
-//     cin>>size;
-//     cin.ignore();
-//     char arr[size+1];
-//     cin.getline(arr,size);
-//     cin.ignore();
-//     int i=0;
-//     int currlength=0,maxlength=0;
-//     int st=0,maxst=0;
-//     while(1){
-//         if(arr[i]==' ' || arr[i]=='\0')
-//         {
-//             if(currlength > maxlength)
-//             {
-//                 maxlength=currlength;
-//                 maxst=st;
-//             }
-//             st=i+1;
-//             currlength=0;
-//         }else{
-//             currlength++;
-//         }
-//         if(arr[i]=='\0'){
-//             break;
-//         }
-//         i++;
-//     }
-//     for(int i=0;i<maxlength;i++){
-//         cout<<arr[i+maxst];
-//     }cout<<endl;
-//     cout<<maxlength;
-//     return 0;
-// }
-
-// int main(){
-//     int n;
-//     cin>>n;
-//     int arr4[]={1,2,3};
-//     char arr[n+1];
-//     char arr2[]="fam";
-//     cout<<sizeof(arr4);
-//     return 0;
-// }
+int main()
+{
+    int n;
+    cin >> n;
+    int arr4[] = {1, 2, 3};
+    char arr[n + 1];
+    char arr2[] = "fam";
+    cout << sizeof(arr4);
+    return 0;
+}

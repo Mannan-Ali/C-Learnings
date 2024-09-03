@@ -8,7 +8,6 @@ int GCD(int a ,int b){
     return GCD(b,a%b);
 }
 int main(){
-    cout<<GCD(6,0)<<endl;
-    cout<<GCD(0,6);
+    cout<<GCD(10,15)<<endl;
     return 0;
 }
