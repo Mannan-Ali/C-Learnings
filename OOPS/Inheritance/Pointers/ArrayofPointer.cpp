@@ -21,7 +21,7 @@ public:
 int main()
 {
     int a = 3;
-    Pointer *p= new Pointer[a];
+    Pointer *p = new Pointer[a];
     for (int i = 0; i < a; i++)
     {
         p[i].setdata();

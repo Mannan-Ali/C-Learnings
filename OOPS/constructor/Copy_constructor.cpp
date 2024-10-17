@@ -28,6 +28,13 @@ public:
         middle_name = n;
         print();
     }
+    student(student &obj){
+        cout<<"Made copy constructor";
+        this->roll_no= obj.roll_no;
+        this->fees= obj.fees;
+        this->middle_name= obj.middle_name;
+
+    }
    
 };
 

@@ -8,9 +8,10 @@ class student
     char grade;
 
 public:
-void print(){
-    cout<<name;
-}
+    void print()
+    {
+        cout << name;
+    }
     student()
     {
         // Default constructor

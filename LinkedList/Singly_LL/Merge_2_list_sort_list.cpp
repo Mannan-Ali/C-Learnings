@@ -10,7 +10,7 @@ struct Node
 };
 
 // Function to merge two sorted linked lists
-Node *mergeLinkedLists(Node *list1, Node *list2)
+Node * mergeLinkedLists(Node *list1, Node *list2)
 {
     // Create a dummy node to simplify the code
     Node dummy(0);
