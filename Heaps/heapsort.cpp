@@ -79,8 +79,8 @@ void heap_sort(int arr[], int s)
 int main()
 {
     Heap h;
-    int array[6] = {-1, 54, 53, 55, 52, 50};
-    int n = 5;
+    int array[7] = {-1,10,15,21,30,18,19};
+    int n = 6;
     for (int i = n / 2; i > 0; i--)
     {
         heapify(array, n, i);

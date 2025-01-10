@@ -67,8 +67,8 @@ void heapify(int arr[], int size, int i)
 int main()
 {
     Heap h;
-    int array[4] = {-1,50,52,54};
-    int n = 3;
+    int array[7] = {-1,10,15,21,30,18,19};
+    int n = 6;
     for (int i = n / 2; i > 0; i--)
     {
         heapify(array,n,i);
