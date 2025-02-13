@@ -77,7 +77,6 @@ public:
     {
         insertHelper(root, word);
     }
-
     // SEARCH
     bool searchHelper(TrieNode *root, string word, int index)
     {
@@ -141,6 +140,8 @@ int main()
     t->insertWord("SUJAL");
     t->insertWord("MANNAN");
     t->insertWord("SUMIT");
+    cout << t->search("MANNAN");
+    t->deleteWord("MANNAN");
     cout << t->search("MANNAN");
 
     return 0;
